@@ -27,4 +27,6 @@ class Action(object):
     def send_keys(self,value,*loc):
         self.find_element(*loc).clear()
         self.find_element(*loc).send_keys(value)
+    
+
 

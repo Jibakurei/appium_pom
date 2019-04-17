@@ -20,7 +20,7 @@ class test_appium(unittest.TestCase):
 
     def test_01login(self):
         '''正确账户密码'''
-        self.login_page.test_login("梁非凡","123123")
+        self.login_page.test_login("梁非凡","123123aa")
         text = self.driver.find_element_by_id('com.yichuan:id/tv_search_content').text
         self.assertEqual('999,999,999件商品任你选',text,msg="文本对比不一致测试失败")
         self.login_page.test_login_exit()

@@ -7,7 +7,8 @@ sys.path.append(root_path)
 import time
 import HTMLTestReportCN
 import HTMLTestRunner
-from TestCase.Test_login import test_appium
+# from TestCase.Test_login import test_appium
+from TestCase.Test_csv_login import test_appium
 # from TestCase.Test_order_process import test_appium
 
 
