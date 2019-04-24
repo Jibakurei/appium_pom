@@ -6,8 +6,8 @@ description:登录页
 from PO import creat_page
 from appium.webdriver.common import mobileby
 import time
-import pandas as pd
-import csv
+# import pandas as pd
+# import csv
 class login_page(creat_page.CreatPage):
     def test_login(self,username,passwrod):
         self.CreatPage = creat_page.CreatPage(self.driver)
