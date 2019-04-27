@@ -10,6 +10,11 @@ import HTMLTestRunner
 # from TestCase.Test_login import test_appium
 from TestCase.Test_csv_login import test_appium
 # from TestCase.Test_order_process import test_appium
+from PO import start_motion_appium
+
+start = start_motion_appium.start_motion_appium()
+
+
 
 
 
@@ -52,3 +57,13 @@ if __name__ == '__main__':
     runner.run(suite)
 
     fp.close()
+
+try:
+       start.kill_appium()
+except Exception as e:
+       print("APPIUM进程关闭失败")
+
+try:
+       start.kill_motion()
+except Exception as e:
+       print("模拟器进程关闭失败")
